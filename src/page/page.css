@@ -1,0 +1,36 @@
+.pageContainer{
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color:var(--pageBg);
+    display: grid;
+    place-items: center;
+}
+.pageInner{
+    width: fit-content;
+    height: fit-content;
+    padding: 5%;
+    background-color: transparent;
+    border: 2px solid black;
+    background-color: var(--pageInnerBg);
+    transform:scale(0);
+    border-radius: 2em;
+    box-shadow: 1em 1em 1em .5em black;
+}
+.pageBox{
+    width: 30vw;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    transform:translateX(-100%);
+    visibility: hidden;
+    color: var(--TextColor1);
+}
+.pageBox img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    border: 2em;
+    object-fit: cover;
+}
